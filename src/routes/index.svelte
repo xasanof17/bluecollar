@@ -3,18 +3,26 @@
 </script>
 
 <script>
+	import Contact from '$lib/Contact/Contact.svelte';
+	import Gallery from '$lib/gallery/Gallery.svelte';
 	import Header from '$lib/header/Header.svelte';
-import Leader from '$lib/leader/Leader.svelte';
-import Provide from '$lib/provide/Provide.svelte';
-import Services from '$lib/services/Services..svelte';
-import Skills from '$lib/skills/Skills.svelte';
-import { text } from 'svelte/internal';
+	import Leader from '$lib/leader/Leader.svelte';
+	import Project from '$lib/project/Project.svelte';
+	import Provide from '$lib/provide/Provide.svelte';
+	import Services from '$lib/services/Services..svelte';
+	import Skills from '$lib/skills/Skills.svelte';
+	import { text } from 'svelte/internal';
 </script>
 
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+		crossorigin="anonymous"
+	/>
 	<style>
 		@import '@fontsource/inter';
 		@import url('../assets/fonts/fonts.css');
@@ -24,10 +32,12 @@ import { text } from 'svelte/internal';
 			--white: #fff;
 			--yellow: #ffb342;
 			--blue: #1c2752;
+			--lightBlue: rgba(28, 39, 82, 0.86);
 			--dark: #222222;
 			--grey: #7e7e7e;
 			--light: #f2f2f2;
-			--shadow:rgba(255, 255, 255, 0.2);
+			--grey2: #d2d2d2;
+			--shadow: rgba(255, 255, 255, 0.2);
 		}
 		* {
 			margin: 0;
@@ -42,7 +52,7 @@ import { text } from 'svelte/internal';
 		}
 		body {
 			margin: 0;
-			background:var(--light);
+			background: var(--light);
 			font-family: var(--font-i);
 		}
 		.container {
@@ -62,24 +72,24 @@ import { text } from 'svelte/internal';
 			font-family: var(--font-m);
 			margin-bottom: 0;
 		}
-		p{
+		p {
 			margin-bottom: 0;
 		}
-		ul{
-			padding-left:0;
+		ul {
+			padding-left: 0;
 			margin-bottom: 0;
 		}
-		a{
-			text-decoration:none;
+		a {
+			text-decoration: none;
 		}
 	</style>
 </svelte:head>
 
-<Header/>
-<Leader/>
+<Header />
+<Leader />
 <Provide />
-<Services/>
+<Services />
 <Skills />
-
-
-
+<Project />
+<Gallery />
+<Contact />
