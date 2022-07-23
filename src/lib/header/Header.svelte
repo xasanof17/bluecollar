@@ -107,6 +107,7 @@
 				align-items: center;
 				justify-content: space-between;
 				padding: 20px 0;
+				flex-wrap: wrap;
 
 				&_open {
 					p {
@@ -135,6 +136,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					flex-wrap: wrap;
 					padding: 30px 0 60px 0;
 					.logo {
 						img {
@@ -151,6 +153,9 @@
 							justify-content: space-between;
 							&:nth-child(1) {
 								margin-right: 65px;
+								@media (max-width: 575px) {
+									margin-right: 0;
+								}
 							}
 							&-img {
 								width: 70px;
@@ -206,11 +211,14 @@
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
+						flex-wrap: wrap;
+						
 						padding: 10px;
 					}
 					&-list {
 						display: flex;
 						align-items: center;
+						flex-wrap: wrap;
 						&_item {
 							margin: 0 25px;
 							&-link {

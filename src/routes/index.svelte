@@ -11,7 +11,6 @@
 	import Provide from '$lib/provide/Provide.svelte';
 	import Services from '$lib/services/Services..svelte';
 	import Skills from '$lib/skills/Skills.svelte';
-	import { text } from 'svelte/internal';
 </script>
 
 <svelte:head>
